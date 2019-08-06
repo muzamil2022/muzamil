@@ -44,17 +44,15 @@ console.log(sayName);
         this.location = location;
         
     }
-    get displayName(){
-        return this.name + ' ' + 'is in ' + this.location;
+    displayName(){
+        return this.name + ' ' + ' is in ' + this.location;
     }
-    set displayName(x){
-        this.name = x;
-    }
-}
+    
+};
 
 var user1 = new user('Marlabs', 'new jersey');
 
-console.log(user1.displayName);*/
+console.log(user1.displayName());*/
 
 //Print: ‘Marlabs is in New Jersey’ (DO NOT create variables outside the User class)
 ////////////////////////////////////////////////////////////
