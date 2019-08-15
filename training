@@ -1,0 +1,152 @@
+
+
+// Apply css border of (1px solid green) to all elements containing attribute name ‘marlabs’
+// Apply css border of (1px solid green) elements containing attribute name ONLY ‘marlabs’
+// Apply css border of (1px solid green) to all elements starting with attribute name ‘marlabs’
+// Apply css border of (1px solid green) to all elements exactly ending with attribute name ‘marlabs’
+// Apply css border of (1px solid green) to all elements containing WORD ‘marlabs’
+// Apply css border of (1px solid green) to all elements containing WORD ‘marlabs’
+// Apply css border of (1px solid green) to the last element in div
+
+// $(document).ready(function(){
+//     $("p[name*='marlabs']").css("border","1px solid green");
+// });
+
+
+// $(document).ready(function(){
+//     $("p[name|='marlabs']").css("border","1px solid green");
+// });
+
+
+// $(document).ready(function(){
+//     $("p[name~='marlabs']").css("border","1px solid green");
+// });
+
+// $(document).ready(function(){
+//     $("p[name$='marlabs']").css("border","1px solid green");
+// });
+
+
+// $(document).ready(function(){
+//     $("p[name='marlabs']").css("border","1px solid green");
+// });
+
+
+// $(document).ready(function(){
+//     $("p[name!='marlabs']").css("border","1px solid green");
+// });
+
+// $(document).ready(function(){
+//     $("div p").last().css("border","1px solid green");
+// });
+
+
+// Give one examples of each that prints ‘Hello marlabs’
+
+// .on()
+// .one()
+// .trigger()
+// .scroll()
+// .resize()
+// .hover()
+// .keypress()
+// .keydown()
+// .keyup()
+// .dblclick()
+
+/////on click ///////
+
+// $(document).ready(function(){
+//     $("p").on("click", function (){
+//         alert("This paragraph was clicked.");
+//         $("p").css("color", "red");
+//        });
+// });
+
+//////////////////////one///////////////    
+// $(document).ready(function(){
+//     $("p").one("click", function (){
+//       $(this).animate({fontSize: "+=9px"});
+//     });  
+// });
+
+
+///////////trigger//////////////////////
+
+// $(document).ready(function() {
+//     $("input").select(function(){
+//         $("input").after("input");
+//     });
+
+// $("button").click(function() {
+//     $("input").trigger("select");
+//  });
+// });
+
+//////////////scroll////////////////////
+
+// $(document).ready(function(){
+//     $("div p").scroll();
+// })
+
+////////////hover////////////////////
+
+// $("p").hover(function(){
+//     $(this).css("color","red");
+//     $(this).css("font-size", "20px");
+// })
+
+///////////////keypress/////////////
+// x = 0;
+// $(document).ready(function(){
+//     $("input").keypress(function(){
+//         $("span").text(x += 1);
+//        });
+// })
+
+////////////keydown///////////////////
+
+
+// $(document).ready(function(){
+//     $("input").keydown(function(){
+//         $("input").css("color", "blue");
+//     });
+  
+
+////////////key up//////////
+//         $("input").keyup(function(){
+//             $("input").css("color", "orange");
+//         });
+// });
+
+/////////doubleclick/////////////
+
+// $(document).ready(function(){
+//     $("p").dblclick(function(){
+//         $("p").css("color","blue");
+//     });
+// });
+
+// ******************************************////
+
+// var xhttp = new XMLHttpRequest();
+// var data;
+// xhttp.onreadystatechange = function(){
+//     if (this.readyState === 4 && this.status === 200) {
+        
+//             var response = JSON.parse(xhttp.responseText);
+//          console.log(response.name);   
+//        }
+// };
+
+// // $(document).ready(function(){
+// //     $("button").click(function(){
+// //             $.get('https://pokeapi.co/api/v2/pokemon/ditto/', function(){
+// //                 alert("data").JSON.parse(this.data);
+// //             })
+// //     })
+
+// // })
+
+// xhttp.open('GET',' https://pokeapi.co/api/v2/pokemon/ditto/', true);
+// xhttp.send();
